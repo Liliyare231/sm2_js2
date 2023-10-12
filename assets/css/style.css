@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(155, 160, 183);
+    transition: all 0.3 ease-in-out;
+    font-family: sans-serif;
+    color: #002d7a;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+header {
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start ;
+    justify-content: space-between;
+}
+
+.logoPractice {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.headerContent {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    
+}
+
+.menuList {
+    display: none;
+
+}
+
+.menuList.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.menuList2 {
+    display: none;
+
+}
+
+.menuList2.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.menuList3 {
+    display: none;
+
+}
+
+.menuList3.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* slider */
+.sm2_slider{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+    align-items: center;
+}
+.container{
+    max-width: 1300px;
+    margin: 20px auto;
+}
+.slider-view{
+    width: 740px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.img{
+    width: 250px;
+    height: 300px;
+
+}
+
+.track{
+    
+    position: absolute;
+    top: 100px;
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.btn{
+    display: flex;
+    gap: 30px;
+}
+.back{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+    background: none;
+
+}
+.next{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+    background: none;
+}
+
+
+/* accordion */
+.accordion_header{
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #fff;
+
+}
+.sm3-accordion{
+    max-width: 1300px;
+    align-items: center;
+}
+.sm3-accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+}
+.accordion_body{
+    max-width: 700px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    
+    border-radius:  0  0 10px  10px ;
+   
+}
+.accordion_body_active{
+    padding: 30px 30px;
+    border: 1px solid white;
+    height: auto;
+    transition: all 1s ease-in-out;
+    display: block;
+    border-top: none;
+}
+.img_active{
+    transition: all 0.3s ease-in-out;
+    transform: rotate(180deg);
+}
